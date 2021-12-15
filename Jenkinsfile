@@ -3,7 +3,7 @@ pipeline {
 
     stages {
         stage('Build') {
-            agent { label 'docker_slave' }
+            
             steps {
                 sh 'mvn clean packages'
             }
